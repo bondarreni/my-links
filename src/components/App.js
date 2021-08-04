@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { LinkPage } from "./LinkPage";
 import { RegisterPage } from "./RegisterPage";
 import { Header } from "./Header";
+import { CategoryPage } from "./CategoryPage";
 
 function App() {
-  const [state, setState] = useState("startPage");
+  const [state, setState] = useState("startPage"); //startPage
   const [userName, setUserName] = useState("");
 
   function register() {
@@ -37,6 +38,7 @@ function App() {
       />
       {(state === "startPage" || state === "loggedInPage") && <LinkPage />}
       {state === "registrationPage" && <RegisterPage onRegister={login} />}
+      {state === "categoryPage" && <CategoryPage />}
     </div>
   );
 }

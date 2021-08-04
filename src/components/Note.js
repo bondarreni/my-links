@@ -11,14 +11,16 @@ function Note(props) {
     key: props.id,
     title: props.title,
     link: props.link,
-    content: props.content
+    content: props.content,
+    category: props.category
   });
 
   const [prevData, setPrevData] = useState({
     key: props.id,
     title: props.title,
     link: props.link,
-    content: props.content
+    content: props.content,
+    category: props.category
   });
 
   function toggleEditable() {
@@ -40,7 +42,8 @@ function Note(props) {
       key: props.id,
       title: prevData.title,
       link: prevData.link,
-      content: prevData.content
+      content: prevData.content,
+      category: props.category,
     });
   }
 

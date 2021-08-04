@@ -16,7 +16,8 @@ function LinkPage() {
           key: counter,
           link: link,
           title: title,
-          content: content
+          content: content,
+          category: "New"
         }
       ];
     });
@@ -42,7 +43,6 @@ function LinkPage() {
         return node;
       });
     });
-    console.log(noteList);
   }
 
   return (
@@ -56,6 +56,7 @@ function LinkPage() {
             title={note.title}
             link={note.link}
             content={note.content}
+            category={note.category}
             onDelete={deleteNote}
             onEdit={editNote}
           />
