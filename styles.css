@@ -110,7 +110,8 @@
     padding: 5px;
     color: rgb(138, 137, 137);
   }
-  .note button {
+  .note button,
+  .newCategory button {
     position: relative;
     float: right;
     margin-right: 10px;
@@ -121,12 +122,14 @@
     cursor: pointer;
     background: none;
   }
-  .note button:hover {
+  .note button:hover,
+  .newCategory button:hover {
     color: rgb(206, 204, 204);
   }
   
   form.create-note,
-  .registerInput {
+  .registerInput,
+  .newCategory {
     position: relative;
     width: 480px;
     margin: 30px auto 10px auto;
@@ -138,7 +141,8 @@
   
   form.create-note input,
   form.create-note textarea,
-  .registerInput {
+  .registerInput,
+  .newCategory input {
     width: 100%;
     border: none;
     padding: 8px;
@@ -147,7 +151,15 @@
     font-family: inherit;
     resize: none;
   }
+
+  .newCategory {
+      display: flex;
+  }
   
+  .newCategory input {
+      flex: 1;
+  }
+
   .registerInput {
     width: 50%;
   }
@@ -203,4 +215,9 @@
     background-color: transparent;
     border: none;
   }
+
   
+  .categoriesDiv {
+      margin-top: 90px;
+      margin-left: 40px;
+  }
