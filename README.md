@@ -1,4 +1,4 @@
 Bondár Reni
 2021 
 
-React app
+React app for saving important links 
